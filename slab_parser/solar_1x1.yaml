@@ -7,7 +7,7 @@ north: 35.783332824707
 parameters: 
   east: -117.5
   time_index: 0
-  data_set: firstlook_solar_derived
+  data_set: solar_derived
   south: 34.75
   version: "1.2"
   height: 
