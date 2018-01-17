@@ -1,0 +1,49 @@
+# goes_8_12_13
+
+  LAYER   
+    NAME 'goes_8_12_13'
+    TYPE POLYGON
+    STATUS OFF
+    PROJECTION
+      "init=epsg:4326"
+    END
+    TRANSPARENCY 100
+
+    METADATA
+      "wms_srs"             "EPSG:4326 EPSG:26710"
+      "wms_name"            "goes_8_12_13"
+      "wms_server_version"  "1.1.1"
+      "wms_format"          "image/png"
+      "wms_onlineresource"  "http://localhost/cgi-bin/mapserv?map=/var/www/mapfiles/bill_tiles.map&"
+    END
+
+    FEATURE
+      POINTS  
+        -125 60  -30 60  -30 -30  -85 -30  -125 0  -125 60
+      END
+      TEXT "GOES 8,12,13"
+    END
+
+    FEATURE
+      POINTS  
+        -85 -20  -30 -20  -30 -50  -85 -50  -85 -20
+      END
+      TEXT "GOES 8,12,13 (South)"
+    END
+
+    CLASS
+      STYLE
+        OUTLINECOLOR 255 0 0
+        WIDTH 4
+      END
+
+      LABEL
+        TYPE bitmap
+        COLOR 255 0 0
+        SIZE Large
+      END
+
+
+    END # end of CLASS
+
+  END # Layer end

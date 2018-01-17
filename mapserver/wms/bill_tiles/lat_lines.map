@@ -1,0 +1,81 @@
+# lat_lines
+
+  LAYER   
+    NAME 'lat_lines'
+    TYPE LINE
+    STATUS OFF
+    PROJECTION
+      "init=epsg:4326"
+    END
+    TRANSPARENCY 100
+
+    METADATA
+      "wms_srs"             "EPSG:4326 EPSG:26710"
+      "wms_name"            "lat_lines"
+      "wms_server_version"  "1.1.1"
+      "wms_format"          "image/png"
+      "wms_onlineresource"  "http://localhost/cgi-bin/mapserv?map=/var/www/mapfiles/bill_tiles.map&"
+    END
+
+    FEATURE
+      POINTS  -180 0 180 0 END
+      TEXT "0"
+    END
+
+    FEATURE
+      POINTS  -180 20 180 20 END
+      TEXT "20 N"
+    END
+
+    FEATURE
+      POINTS  -180 40 180 40 END
+      TEXT "40 N"
+    END
+
+    FEATURE
+      POINTS  -180 60 180 60 END
+      TEXT "60 N"
+    END
+
+    FEATURE
+      POINTS  -180 80 180 80 END
+      TEXT "80 N"
+    END
+############### 
+    FEATURE
+      POINTS  -180 -20 180 -20 END
+      TEXT "20 S"
+    END
+
+    FEATURE
+      POINTS  -180 -40 180 -40 END
+      TEXT "40 S"
+    END
+
+    FEATURE
+      POINTS  -180 -60 180 -60 END
+      TEXT "60 S"
+    END
+
+    FEATURE
+      POINTS  -180 -80 180 -80 END
+      TEXT "80 S"
+    END
+
+    CLASS
+      STYLE
+        COLOR 0 0 0
+        WIDTH 2
+      END
+
+      LABEL
+        TYPE bitmap
+        POSITION lc
+        OUTLINECOLOR 255 255 255
+        SIZE large
+      END
+
+
+    END # end of CLASS
+
+  END # Layer end

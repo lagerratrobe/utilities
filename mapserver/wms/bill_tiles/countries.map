@@ -1,0 +1,23 @@
+# countries
+
+LAYER
+  NAME 'countries'
+  TYPE POLYGON
+  STATUS ON
+  TRANSPARENCY ALPHA
+  PROJECTION
+    "init=epsg:4326"
+  END
+
+  DATA 'unep_coastlines.shp'
+
+  CLASSITEM "NAME"
+  CLASS
+    NAME "countries"
+    STYLE
+      COLOR 180 180 180 
+      OUTLINECOLOR 50 50 50
+    END
+  END # end of class
+
+END # end of layer

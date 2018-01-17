@@ -1,0 +1,42 @@
+MAP
+  PROJECTION
+    "init=epsg:4326"
+  END
+
+  EXTENT -180 -90 180 90
+  SIZE 1200 580
+
+
+# layers to include in map
+  INCLUDE 'countries.map'
+  INCLUDE 'tiles.map'
+  INCLUDE 'goes_9_10_11.map'
+  INCLUDE 'goes_8_12_13.map'
+  INCLUDE 'met_07_08_09.map'
+  INCLUDE 'lat_lines.map'
+
+
+# WEB PARAMETERS
+    WEB
+        IMAGEURL "/var/www/html/tmp"
+        IMAGEPATH "/tmp"
+    METADATA
+      "ows_enable_request"   "*"
+    END
+
+    END
+
+# OUTPUT FORMAT SPECIFICATION
+  OUTPUTFORMAT
+   NAME 'png'
+   DRIVER GD/PNG
+   IMAGEMODE RGBA
+   EXTENSION "png"
+   FORMATOPTION "TRANSPARENT=ON"
+   FORMATOPTION "FULL_RESOLUTION=TRUE"
+   FORMATOPTION "INTERLACE=OFF"
+   TRANSPARENT ON
+  END #end outputformat
+
+
+END

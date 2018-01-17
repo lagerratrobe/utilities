@@ -1,0 +1,21 @@
+# tiles
+
+LAYER
+  NAME 'tiles'
+  TYPE LINE
+  STATUS OFF
+  TRANSPARENCY ALPHA
+  PROJECTION
+    "init=epsg:4326"
+  END
+
+  DATA 'land_tiles.shp'
+
+  CLASS
+    NAME "tiles"
+    STYLE
+      COLOR 255 0 0 
+    END
+  END # end of class
+
+END # end of layer
